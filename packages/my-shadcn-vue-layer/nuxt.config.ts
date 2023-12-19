@@ -19,5 +19,14 @@ export default defineNuxtConfig({
       // prevent adding another prefix component by it's path.
       pathPrefix: false,
     },
+    {
+      path: join(currentDir, './components/demos'),
+      // this is required else Nuxt will autoImport `.ts` file
+      extensions: ['.vue'],
+      // prefix for your components, eg: SvCalendar
+      // prefix: 'Sv',
+      // prevent adding another prefix component by it's path.
+      pathPrefix: false,
+    },
   ],
 })
